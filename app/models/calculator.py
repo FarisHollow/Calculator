@@ -11,14 +11,6 @@ class Calculator:
         for num in numbers[1:]:
             if operation == "add":
                 result = add(result, num)
-            elif operation == "subtract":
-                result = subtract(result, num)
-            elif operation == "multiply":
-                result = multiply(result, num)
-            elif operation == "divide":
-                if num == 0:
-                    raise ValueError("Division by zero is not allowed.")
-                result = divide(result, num)
             else:
                 raise ValueError(f"Invalid operation: {operation}")
         
