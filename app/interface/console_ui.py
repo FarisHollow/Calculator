@@ -5,7 +5,7 @@ from app.models.calculator import Calculator
 def main():
     calculator = Calculator()
     print("Welcome to the Python OOP Calculator!")
-    print("You can perform operations on multiple numbers (e.g., add, subtract, multiply, divide).")
+    print("You can perform operations on multiple numbers (e.g., add, sub, multiply, divide).")
     while True:
         print("\nOptions:")
         print("1. Perform an Operation")
@@ -18,7 +18,7 @@ def main():
 
         if choice == '1':
             try:
-                operation = input("Enter operation (add, subtract, multiply, divide): ").lower()
+                operation = input("Enter operation (add, sub, multiply, divide): ").lower()
                 numbers = input("Enter numbers separated by spaces: ").split()
                 numbers = [float(num) for num in numbers]
                 
