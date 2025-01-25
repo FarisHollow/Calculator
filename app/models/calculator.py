@@ -1,4 +1,4 @@
-from app.core.operations import add, subtract, multiply, divide
+from app.core.operations import add, sub
 
 class Calculator:
     def operate(self, numbers, operation):
@@ -11,6 +11,8 @@ class Calculator:
         for num in numbers[1:]:
             if operation == "add":
                 result = add(result, num)
+            elif operation =="sub":
+                result = sub(result, num)
             else:
                 raise ValueError(f"Invalid operation: {operation}")
         
